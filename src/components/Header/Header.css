@@ -1,0 +1,96 @@
+/* Header.css */
+
+.header {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    height: 10vh;
+    z-index: 20;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #e5e7eb; /* gray-200 */
+  }
+  
+  .header .container {
+    /* max-width: 1200px; Adjust to your needs */
+    /* margin: 0 auto; */
+    width: 80%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px; /* 4 */
+  }
+  
+  .header .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header .logo img {
+    height: 32px; /* 8 */
+    margin-right: 12px; /* 3 */
+  }
+  
+  .header .title {
+    font-size: 2.3rem; 
+    font-weight: 600; 
+    color: #000; 
+  }
+  
+  .header .nav {
+    display: flex;
+  }
+  
+  .header .nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .header .nav li {
+    margin-right: 20px; 
+  }
+  
+  .header .nav a {
+    font-size: 1.7rem; 
+    padding: 8px 12px;
+    color: #1f2937;
+    text-decoration: none;
+    border-radius: 0.375rem; 
+    transition: background-color 0.3s ease;
+  }
+  
+  .header .nav a:hover {
+    background-color: #f3f4f6; 
+  }
+  
+  .header .button {
+    font-size: 1.7rem; 
+    background-color: #3b82f6; 
+    color: white;
+    padding: 8px 13px; 
+    border-radius: 0.4rem; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .header .button:hover {
+    background-color: #2563eb; /* blue-800 */
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .header .nav {
+      display: none; /* Hide navigation by default on small screens */
+    }
+    
+    /* Add a class to toggle nav visibility on small screens if needed */
+    .header .nav.active {
+      display: flex; /* Show when active */
+      flex-direction: column; /* Stack items vertically */
+    }
+  }
+  
+  

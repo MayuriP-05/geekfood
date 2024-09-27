@@ -1,0 +1,83 @@
+/* hero.css */
+
+.hero {
+    position: relative;
+    background-image: url('https://images.unsplash.com/photo-1604014237800-1c9102c219da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 2275px;
+    height: 100vh;
+    /* display: flex; */
+    /* justify-content: flex-start;
+    align-items: flex-start; */
+    /* height: 100vh; */
+  }
+  
+ 
+  
+  .hero .content {
+    /* position: relative; */
+    width:55%; 
+
+    padding: 0rem 1rem; 
+    text-align: center;
+    height: 100%; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; /* Center vertically */
+  }
+  
+  .hero h1 {
+    font-size: 4rem; 
+    font-weight: 800; 
+    color: black;
+  }
+  
+  .hero h1 strong {
+    display: block;
+    font-weight: 800;
+    color: #e11d48; 
+  }
+  
+  .hero p {
+    margin-top: 1rem; 
+    /* max-width: 40rem;  */
+    padding: 0 13rem;
+    font-size: 2rem; 
+    color: black;
+    font-weight: 500;
+  }
+  
+  .hero .button-group {
+    margin-top: 2rem; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem; 
+    justify-content: center;
+  }
+  
+  .hero .button {
+   padding: 15px 50px;
+   border-radius: 10px;
+    font-size: 1.3rem; 
+    font-weight: 500;
+    text-align: center; 
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero .button.primary {
+    background-color: #dc2626; /* rose-600 */
+    color: white;
+  }
+  
+  .hero .button.secondary {
+    background-color: white;
+    color: #dc2626; /* rose-600 */
+   
+  }
+  
+  .hero .button:hover {
+    color: #c0263a; 
+  }
+  

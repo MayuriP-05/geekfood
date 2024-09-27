@@ -1,0 +1,68 @@
+/* Feedback Component Styles */
+
+.feedback-container {
+    max-width: 60vw;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .feedback-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem; /* Adjust gap between items */
+  }
+  
+  .feedback-item {
+    /* flex: 1 1 calc(33.333% - 1.5rem);  */
+    width: 390px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background: #f9f9f9;
+    padding: 1.5rem;
+    position: relative;
+  }
+  
+  .feedback-quote {
+    font-style: italic;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .feedback-author {
+    display: flex;
+    align-items: center;
+  }
+  
+  .feedback-author img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+  }
+  
+  .feedback-author-info {
+    font-size: 0.875rem;
+  }
+  
+  .feedback-author-name {
+    font-weight: bold;
+  }
+  
+  .feedback-author-role {
+    color: #555;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .feedback-item {
+      flex: 1 1 calc(50% - 1rem); /* 2 columns on medium screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .feedback-item {
+      flex: 1 1 100%; /* 1 column on small screens */
+    }
+  }
+  
